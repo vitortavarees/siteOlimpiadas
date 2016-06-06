@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Jogos Olímpicos Rio 2016</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="java/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="java/jssor.slider.mini.js"></script>
+  
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Rio 2016</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">INICIO</a></li>
+        <li><a href="modalidades.html">MODALIDADES</a></li>
+        <li><a href="tunel.html">TÚNEL DO TEMPO</a></li>
+        <li><a href="tocha.html">TOCHA</a></li>
+        <li><a href="cidade.html">CIDADE OLÍMPICA</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<script>
+        jQuery(document).ready(function ($) {
+            
+            var jssor_1_SlideoTransitions = [
+              [{b:5500,d:3000,o:-1,r:240,e:{r:2}}],
+              [{b:-1,d:1,o:-1,c:{x:51.0,t:-51.0}},{b:0,d:1000,o:1,c:{x:-51.0,t:51.0},e:{o:7,c:{x:7,t:7}}}],
+              [{b:-1,d:1,o:-1,sX:9,sY:9},{b:1000,d:1000,o:1,sX:-9,sY:-9,e:{sX:2,sY:2}}],
+              [{b:-1,d:1,o:-1,r:-180,sX:9,sY:9},{b:2000,d:1000,o:1,r:180,sX:-9,sY:-9,e:{r:2,sX:2,sY:2}}],
+              [{b:-1,d:1,o:-1},{b:3000,d:2000,y:180,o:1,e:{y:16}}],
+              [{b:-1,d:1,o:-1,r:-150},{b:7500,d:1600,o:1,r:150,e:{r:3}}],
+              [{b:10000,d:2000,x:-379,e:{x:7}}],
+              [{b:10000,d:2000,x:-379,e:{x:7}}],
+              [{b:-1,d:1,o:-1,r:288,sX:9,sY:9},{b:9100,d:900,x:-1400,y:-660,o:1,r:-288,sX:-9,sY:-9,e:{r:6}},{b:10000,d:1600,x:-200,o:-1,e:{x:16}}]
+            ];
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+</script>
+
+<div id="jssor_1" style="position: relative; margin: 0 auto; top: 50px; left: 0px; width: 1300px; height: 550px; overflow: hidden; visibility: hidden;">
+        
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 550px; overflow: hidden;">
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="img/capario.jpg" />
+					<div style="position: absolute; top: 100px; right: 100px; width: 300px; height: 120px; font-size: 60px; color: #ffffff; line-height: 50px; text-shadow: 5px 5px 5px #000000; font-family: impact;">JOGOS OLÍMPICOS RIO 2016</div>
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="img/feminino.jpg" />
+					<div style="position: absolute; top: 300px; left: 30px; width: 480px; height: 120px; font-size: 60px; color: #ffffff; line-height: 50px; text-shadow: 5px 5px 5px #000000; font-family: impact;">AMIZADE, RESPEITO E EXCELÊNCIA!</div>
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="img/usain-capa2.jpg" />
+					<div style="position: absolute; top: 300px; left: 30px; width: 480px; height: 120px; font-size: 60px; color: #ffffff; line-height: 50px; text-shadow: 5px 5px 5px #000000; font-family: impact;">APONTA PRA FÉ E REMA! OU MELHOR, CORRE!</div>
+            </div>
+			<div data-p="225.00" style="display: none;">
+                <img data-u="image" src="img/rio4.jpg" />
+					<div style="position: absolute; top: 300px; left: 30px; width: 480px; height: 120px; font-size: 60px; color: #ffffff; line-height: 50px; text-shadow: 5px 5px 5px #000000; font-family: impact;">CIDADE MARAVILHOSA, CHEIA DE ENCANTOS MIL!</div>
+            </div>
+			<div data-p="225.00" style="display: none;">
+                <img data-u="image" src="img/capa1.jpg" />
+					<div style="position: absolute; top: 300px; left: 30px; width: 480px; height: 120px; font-size: 60px; color: #ffffff; line-height: 50px; text-shadow: 5px 5px 5px #000000; font-family: impact;">O SONHO DE MAIS UM OURO!</div>
+            </div>
+			
+            <a data-u="ad" href="http://www.jssor.com" style="display:none">Bootstrap Slider</a>
+        
+        </div>
+        <!-- Pontos do navegador -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Setas do navegador -->
+        <span data-u="arrowleft" class="jssora22l" style="top:0px;left:20px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r" style="top:0px;right:12px;width:40px;height:58px;" data-autocenter="2"></span>
+</div>
+
+
+<!-- Container (Sessão de descrição do evento) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8"><br>		
+      <h2>E que comecem os jogos!</h2>
+      <h4>Evento ocorrerá em agosto, no Rio de Janeiro, e promete marcar a história dos jogos.</h4>
+      <h3>Olimpiadas é o nome dado à competição que reune centenas de nacionalidades para a execução de várias modalidades esportivas. O evento ocorre dentro de um período de 4 anos e os locais variam de evento para evento. Esse ano a cidade maravilhosa foi a escolhida e sediará a realização do evento tão aguardado. O evento proporcionará mais uma vez ao torcedor, especialmente ao brasileiro, a experiência do convivio com a chama olimpica. O evento perpetua-se desde os primórdios da Antiga Grécia e até hoje é considerado a competição mais importante do esporte.<br>
+	  "Contagiante" talvez seja o adjetivo que mais define a Olimpíada. A rotina dos telespectadores gira em torno dos horários dos jogos e adivinhações de quem será o próximo adversário, qual sua estratégia e história. Nessa época, vale até conseguir uma folguinha do trabalho para assistir aos jogos.</h3>
+      <br><button class="btn btn-default btn-lg"><a href="tocha.html">Revezamento da Tocha</a></button>
+    </div>
+    <div class="col-sm-4">
+		<div data-u="caption" data-t="4">
+			<img src="img/mascote01.png"/>
+		</div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-3">
+      <span class="glyphicon glyphicon-fire logo slideanim"></span>
+    </div>
+    <div class="col-sm-9">
+      <h2>OS VALORES OLÍMPICOS</h2>
+      <h4>O importante não é vencer, mas sim competir!</h4>
+      <h3>A <strong>AMIZADE</strong> estende a mão e busca o entendimento; o amigo procura entender o próximo apesar das diferenças e tem em relação ao outro atitudes e sentimentos positivos como simpatia, empatia, honestidade, compaixão, confiança, solidariedade e reciprocidade positiva.<br><br>
+	  O <strong>RESPEITO</strong> inclui o fair play (jogo limpo - respeito às regras do jogo), a honestidade, saber seus limites e tomar conta de sua própria saúde (não ao doping) e do meio ambiente. Respeito significa também um sentimento positivo de consideração por outra pessoa, de outro país ou de outra religião, por exemplo.<br><br>
+	  A <strong>EXCELÊNCIA</strong> tem tudo a ver com dar o melhor de si, tanto no esporte quanto na vida, participar e progredir de acordo com seus objetivos
+	  </h3>
+    </div>
+  </div>
+</div>
+
+
+<footer class="rodape text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Olimpíadas Rio 2016 &copy</p></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
